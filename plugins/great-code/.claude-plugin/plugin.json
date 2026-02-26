@@ -4,5 +4,6 @@
   "version": "1.0.0",
   "author": "eliias",
   "license": "MIT",
-  "repository": "https://github.com/eliias/skills"
+  "repository": "https://github.com/eliias/skills",
+  "hooks": "./hooks/hooks.json"
 }

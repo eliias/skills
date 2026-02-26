@@ -1,6 +1,6 @@
 ---
 name: clean-code-review
-description: Use when reviewing or modifying code to improve readability and maintainability.
+description: "You MUST use this when reviewing, modifying, or improving existing code for readability and maintainability."
 ---
 
 # Clean Code Review

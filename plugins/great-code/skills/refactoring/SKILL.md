@@ -1,6 +1,6 @@
 ---
 name: refactoring
-description: Use when actively developing code to continuously improve structure through disciplined hat-switching between adding function and refactoring.
+description: "You MUST use this when actively developing code to enforce disciplined hat-switching between adding function and refactoring."
 ---
 
 # Refactoring (Two Hats)
