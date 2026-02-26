@@ -23,12 +23,24 @@ Each skill follows the **Canon - Heuristics - Procedure - Artifacts - Gates** pa
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full template and guidelines.
 
+## Auto-Invocation
+
+Skills activate automatically via a session-start hook. When the plugin loads, the [using-great-code](plugins/great-code/skills/using-great-code/SKILL.md) meta-skill is injected into the session. It checks each user message against skill triggers and invokes the matching skill without requiring an explicit slash command.
+
+You can still invoke skills manually:
+
+```
+/clean-code-review
+/refactoring
+```
+
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
-| [clean-code-review](plugins/great-code/skills/clean-code-review/SKILL.md) | Review and refactor code for readability and maintainability |
+| [clean-code-review](plugins/great-code/skills/clean-code-review/SKILL.md) | Review, modify, or improve existing code for readability and maintainability |
 | [refactoring](plugins/great-code/skills/refactoring/SKILL.md) | Disciplined two-hat development: alternate between adding function and refactoring |
+| [using-great-code](plugins/great-code/skills/using-great-code/SKILL.md) | Meta-skill that auto-invokes other skills when relevant (injected at session start) |
 
 ## License
 
