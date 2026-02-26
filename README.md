@@ -8,7 +8,7 @@ Install from the marketplace:
 
 ```bash
 /plugin marketplace add eliias/skills
-/plugin install eliias@great-code
+/plugin install great-code
 ```
 
 ## Framework
