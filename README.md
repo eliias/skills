@@ -19,6 +19,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full template and guidelines.
 | Skill | Description |
 |-------|-------------|
 | [clean-code-review](skills/clean-code-review/SKILL.md) | Review and refactor code for readability and maintainability |
+| [refactoring](skills/refactoring/SKILL.md) | Disciplined two-hat development: alternate between adding function and refactoring |
 
 ## Installation
 
