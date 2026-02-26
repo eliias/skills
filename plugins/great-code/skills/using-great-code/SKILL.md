@@ -42,6 +42,18 @@ Use when actively developing code to enforce disciplined hat-switching between a
 
 Invoke with: `/refactoring`
 
+### technical-sparring
+
+**Triggers**: exploring a technical decision, debating architecture or infrastructure,
+comparing approaches, expressing uncertainty about direction, asking "should we...",
+"what if...", "I'm thinking about...", weighing tradeoffs, design discussions,
+deep dives into technical topics.
+
+Use when the user is thinking out loud about a technical decision and needs a
+rigorous thinking partner, not an executor.
+
+Invoke with: `/technical-sparring`
+
 ## Rules
 
 - Always announce: "Using great-code skill: **<skill-name>**" before following a skill's procedure.
