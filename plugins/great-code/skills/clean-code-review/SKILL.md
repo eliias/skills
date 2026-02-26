@@ -1,6 +1,6 @@
 ---
 name: clean-code-review
-description: "You MUST use this when reviewing, modifying, or improving existing code for readability and maintainability."
+description: "Use when reviewing code structure, design smells, error handling, or test quality at module level."
 ---
 
 # Clean Code Review
@@ -15,7 +15,7 @@ This skill draws from three foundational texts on software craft:
 
 ## Operating Definition
 
-Clean code **minimizes cognitive load for the next reader** and **reduces the cost of future change**. Every recommendation from this skill serves one or both of these goals. When readability and cleverness conflict, readability wins.
+Clean code **reduces the cost of future change** through structural hygiene — cohesion, coupling, encapsulation, error handling, and test coverage. Every recommendation from this skill serves this goal. For tactical code clarity at the line and block level (naming, abstraction fitness, narrative flow), see **simplicity-review**.
 
 ## Heuristics
 

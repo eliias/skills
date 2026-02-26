@@ -6,39 +6,19 @@ A compact catalog of code quality heuristics. Each table lists the smell or prin
 
 | Smell | Diagnostic | Action |
 |-------|-----------|--------|
-| Long method | > 20 lines or requires scrolling to understand? | Extract method by responsibility |
 | Large class | > 1 clear responsibility? | Split into focused classes |
-| Deep nesting | > 2 levels of indentation? | Extract, use early returns, or invert conditions |
-| Boolean flag arguments | Method behaves differently based on a boolean? | Split into two methods with intention-revealing names |
-| Duplication | Same logic in 2+ places? | Extract shared method or module |
 | Primitive obsession | Passing raw strings/ints that represent a domain concept? | Introduce a value object or type alias |
 | Feature envy | Method uses more data from another class than its own? | Move method to the class it envies |
 | Data clumps | Same group of parameters passed together repeatedly? | Introduce a parameter object |
 | Shotgun surgery | One change requires edits in many unrelated files? | Consolidate related logic into a single module |
-| Speculative generality | Abstractions, parameters, or hooks with no current consumer? | Remove until actually needed (YAGNI) |
-
-## Naming
-
-| Principle | Diagnostic | Action |
-|-----------|-----------|--------|
-| Reveal intent | Does the name describe *what* and *why*, not *how*? | Rename to express purpose |
-| No abbreviations | Would a new team member understand the name? | Spell it out |
-| Consistent vocabulary | Same concept uses different words across the codebase? | Pick one term, apply everywhere |
-| Scope-appropriate length | Short name in a large scope or long name in a tiny scope? | Scale name length to visibility |
-| No type encoding | Name includes type info like `strName` or `arrItems`? | Drop the prefix, let the type system do its job |
-| Searchable names | Can you find all usages with a text search? | Avoid single-letter names outside small loops |
 
 ## Functions
 
 | Principle | Diagnostic | Action |
 |-----------|-----------|--------|
 | Do one thing | Can you describe the function without using "and"? | Split into separate functions |
-| Single abstraction level | Does the body mix high-level logic with low-level details? | Extract the low-level details |
-| Few arguments | > 3 parameters? | Introduce a parameter object or split the function |
-| No side effects | Does the function change state beyond its return value unexpectedly? | Make effects explicit or separate query from command |
 | Command-query separation | Does the function both mutate state and return a value? | Split into a command (void) and a query (return) |
 | Descriptive name | Does the name fully describe what the function does? | Rename to match the actual behavior |
-| No flag arguments | Boolean parameter that switches behavior? | Create two functions with clear names |
 
 ## Comments
 

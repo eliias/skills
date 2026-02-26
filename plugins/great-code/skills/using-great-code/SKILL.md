@@ -18,11 +18,19 @@ For every user message, before acting:
 
 ## Available Skills
 
+### simplicity-review
+
+**Triggers**: evaluating code clarity, questioning abstractions, overengineering concerns, readability at line/block level, code feels harder than the problem it solves.
+
+Use when the question is "is this code simpler and clearer than it could be?"
+
+Invoke with: `/simplicity-review`
+
 ### clean-code-review
 
-**Triggers**: reviewing code, modifying existing code, PR reviews, improving readability, code quality audits, addressing code smells.
+**Triggers**: PR reviews, design smell audits, error handling reviews, test quality assessments, module-level structural improvements.
 
-You MUST use this when reviewing, modifying, or improving existing code for readability and maintainability.
+Use when the question is "is this code structurally sound for long-term maintenance?"
 
 Invoke with: `/clean-code-review`
 
@@ -30,7 +38,7 @@ Invoke with: `/clean-code-review`
 
 **Triggers**: actively developing code — adding features, fixing bugs, implementing changes that touch existing code. Enforces the two-hat discipline (adding function vs. refactoring).
 
-You MUST use this when actively developing code to enforce disciplined hat-switching between adding function and refactoring.
+Use when actively developing code to enforce disciplined hat-switching between adding function and refactoring.
 
 Invoke with: `/refactoring`
 

@@ -30,6 +30,7 @@ Skills activate automatically via a session-start hook. When the plugin loads, t
 You can still invoke skills manually:
 
 ```
+/simplicity-review
 /clean-code-review
 /refactoring
 ```
@@ -38,7 +39,8 @@ You can still invoke skills manually:
 
 | Skill | Description |
 |-------|-------------|
-| [clean-code-review](plugins/great-code/skills/clean-code-review/SKILL.md) | Review, modify, or improve existing code for readability and maintainability |
+| [simplicity-review](plugins/great-code/skills/simplicity-review/SKILL.md) | Evaluate code clarity, question abstractions, and investigate overengineering concerns |
+| [clean-code-review](plugins/great-code/skills/clean-code-review/SKILL.md) | Review code structure, design smells, error handling, and test quality at module level |
 | [refactoring](plugins/great-code/skills/refactoring/SKILL.md) | Disciplined two-hat development: alternate between adding function and refactoring |
 | [using-great-code](plugins/great-code/skills/using-great-code/SKILL.md) | Meta-skill that auto-invokes other skills when relevant (injected at session start) |
 
