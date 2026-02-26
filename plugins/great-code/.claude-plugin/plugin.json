@@ -6,6 +6,5 @@
     "name": "eliias"
   },
   "license": "MIT",
-  "repository": "https://github.com/eliias/skills",
-  "hooks": "./hooks/hooks.json"
+  "repository": "https://github.com/eliias/skills"
 }
