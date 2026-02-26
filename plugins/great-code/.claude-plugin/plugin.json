@@ -1,0 +1,8 @@
+{
+  "name": "great-code",
+  "description": "Agent skills for code review and refactoring, built on the Canon-Heuristics-Procedure-Artifacts-Gates framework.",
+  "version": "1.0.0",
+  "author": "eliias",
+  "license": "MIT",
+  "repository": "https://github.com/eliias/skills"
+}

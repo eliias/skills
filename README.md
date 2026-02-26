@@ -1,6 +1,15 @@
 # skills
 
-A collection of agent skills for Claude Code, built on a structured framework.
+A plugin marketplace of agent skills for Claude Code, built on a structured framework.
+
+## Installation
+
+Install from the marketplace:
+
+```bash
+/plugin marketplace add eliias/skills
+/plugin install eliias@great-code
+```
 
 ## Framework
 
@@ -18,16 +27,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full template and guidelines.
 
 | Skill | Description |
 |-------|-------------|
-| [clean-code-review](skills/clean-code-review/SKILL.md) | Review and refactor code for readability and maintainability |
-| [refactoring](skills/refactoring/SKILL.md) | Disciplined two-hat development: alternate between adding function and refactoring |
-
-## Installation
-
-Symlink or copy a skill directory into your Claude Code skills folder:
-
-```bash
-ln -s $(pwd)/skills/clean-code-review ~/.claude/skills/clean-code-review
-```
+| [clean-code-review](plugins/great-code/skills/clean-code-review/SKILL.md) | Review and refactor code for readability and maintainability |
+| [refactoring](plugins/great-code/skills/refactoring/SKILL.md) | Disciplined two-hat development: alternate between adding function and refactoring |
 
 ## License
 

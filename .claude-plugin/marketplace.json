@@ -1,0 +1,12 @@
+{
+  "type": "marketplace",
+  "name": "eliias",
+  "description": "A collection of agent skills for Claude Code, built on a structured framework.",
+  "owner": "eliias",
+  "plugins": [
+    {
+      "name": "great-code",
+      "path": "./plugins/great-code"
+    }
+  ]
+}

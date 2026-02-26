@@ -15,12 +15,18 @@ Every skill in this repository follows the **Canon - Heuristics - Procedure - Ar
 ## Directory Structure
 
 ```
-skills/
-  <skill-name>/
-    SKILL.md              # Entry point (required)
-    references/           # Supporting material (optional)
-      heuristics.md
-      examples.md
+.claude-plugin/
+  marketplace.json            # Marketplace catalog
+plugins/
+  great-code/
+    .claude-plugin/
+      plugin.json             # Plugin manifest
+    skills/
+      <skill-name>/
+        SKILL.md              # Entry point (required)
+        references/           # Supporting material (optional)
+          heuristics.md
+          examples.md
 ```
 
 - Use **kebab-case** for skill directory names
@@ -72,7 +78,7 @@ Every `SKILL.md` must include YAML frontmatter with:
 
 ## Adding a New Skill
 
-1. Create `skills/<skill-name>/SKILL.md` following the template above
-2. Add reference files in `skills/<skill-name>/references/` if needed
+1. Create `plugins/great-code/skills/<skill-name>/SKILL.md` following the template above
+2. Add reference files in `plugins/great-code/skills/<skill-name>/references/` if needed
 3. Update the skill catalog table in `README.md`
-4. Test by symlinking to `~/.claude/skills/` and invoking in Claude Code
+4. Test locally with `claude --plugin-dir ./plugins/great-code` and invoke the skill
