@@ -1,12 +1,17 @@
 {
-  "type": "marketplace",
-  "name": "eliias",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "eliias-skills",
   "description": "A collection of agent skills for Claude Code, built on a structured framework.",
-  "owner": "eliias",
+  "owner": {
+    "name": "eliias"
+  },
   "plugins": [
     {
       "name": "great-code",
-      "path": "./plugins/great-code"
+      "description": "Agent skills for code review and refactoring, built on the Canon-Heuristics-Procedure-Artifacts-Gates framework.",
+      "source": "./plugins/great-code",
+      "category": "development",
+      "homepage": "https://github.com/eliias/skills"
     }
   ]
 }
